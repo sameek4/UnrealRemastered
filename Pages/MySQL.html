@@ -67,11 +67,11 @@
             <div id="content2" class="col-lg-9">
                 <h1 class="headerfont2">Setting Up Database Connection in UE4</h1>
                 <p>
-                    Before we begin writing our SQL queries and executing them in our database, we first need to set up a connection within UE4. This is a onetime setup, and is similar to how we manually connect to our DB Server using Windows or SQL Server Authentication, as shown in the above steps.
+                    Before we begin writing our SQL queries and executing them in our database, we first need to set up a connection within UE4. This is a onetime setup, and is similar to how we manually connect to our DB Server using Windows or MySQL Server Authentication, as shown in the above steps.
                 </p>
                 <section>
                     <h2 class="headerfont4"><u>Authentication Modes</u></h2>
-                    <p>To set up a DB Connection, we either need to use <strong>Windows Authentication mode</strong> or <strong>SQL Authentication mode</strong>.</p>
+                    <p>To set up a DB Connection, we either need to use <strong>Windows Authentication mode</strong> or <strong>MySQL Authentication mode</strong>.</p>
                     <section>
                         <p>
                             <strong>Windows Authentication mode</strong> authenticates users to use the Database server via Windows Login ID and Password.
@@ -96,20 +96,20 @@
                             </div>
                         </div>
                         <p>
-                            <strong>SQL Server Authentication mode</strong> uses logins that are created and stored in SQL Server and are not based on Windows user accounts. Here you need to explicitly enter both your SQL Server ID and password, while setting up the connection property.
+                            <strong>MySQL Authentication mode</strong> uses logins that are created and stored in MySQL Server and are not based on Windows user accounts. Here you need to explicitly enter both your MySQL Server ID and password, while setting up the connection property.
                         </p>
                         <p>
                             To learn about Authentication modes in detail, you can refer to the below link:
                         </p>
-                        <p style="text-align:center"><a href="https://msdn.microsoft.com/en-us/library/ms144284.aspx">https://msdn.microsoft.com/en-us/library/ms144284.aspx</a></p>
+                        <p style="text-align:center"><a href="https://dev.mysql.com/doc/refman/5.5/en/authentication-plugins.html">https://dev.mysql.com/doc/refman/5.5/en/authentication-plugins.html</a></p>
                     </section>
 
                 </section>
 
                 <section>
-                    <h2 class="headerfont4"><u>SQL SERVER CONNECTION</u></h2>
+                    <h2 class="headerfont4"><u>MySQL SERVER CONNECTION</u></h2>
                     <p>
-                        To connect to the SQL Server, we first need to set the connection properties. For that, we need to call the function <strong>Set Connection Properties</strong>, which forms a valid connection string that will later be used to access the given database. If you are using Windows Authentication, you don’t need to enter Used ID or Password.
+                        To connect to the MySQL Server, we first need to set the connection properties. For that, we need to call the function <strong>Set Connection Properties</strong>, which forms a valid connection string that will later be used to access the given database. If you are using Windows Authentication, you don’t need to enter Used ID or Password.
                     </p>
                     <img class="Image1" src="../Images/SetConnectionProperties.jpg" />
 
@@ -121,7 +121,7 @@
                     </div>
                     <div class="row row-eq-height">
                         <div class="col-xs-6 col-md-4 TableFormat4">Server</div>
-                        <div class="col-xs-12 col-md-8 TableFormat5">Here you need to enter you Server address. If the server is your local machine, then it is localhost by default. If you have hosted your server in your web service or using the steps described <a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started"><strong style="color:lightgoldenrodyellow;font-style:italic">here</strong></a>, you must be having your dedicated server name. You need to enter that here.</div>
+                        <div class="col-xs-12 col-md-8 TableFormat5">Here you need to enter you Server address. If the server is your local machine, then it is localhost by default. If you have hosted your server in your web service, you must be having your dedicated server name. You need to enter that here.</div>
                     </div>
                     <div class="row row-eq-height">
                         <div class="col-xs-6 col-md-4 TableFormat4">DBName</div>
@@ -129,12 +129,12 @@
                     </div>
                     <div class="row row-eq-height">
                         <div class="col-xs-1 col-md-4 TableFormat4">User ID</div>
-                        <div class="col-md-8 TableFormat5">For SQL Server Authentication, you need to pass your SQL Server user name here.</div>
+                        <div class="col-md-8 TableFormat5">For MySQL Server Authentication, you need to pass your MySQL Server user name here.</div>
                         <div class="clearfix visible-xs"></div>
                     </div>
                     <div class="row row-eq-height">
                         <div class="col-xs-1 col-md-4 TableFormat4">Password</div>
-                        <div class="col-md-8 TableFormat5">For SQL Server Authentication, this is your SQL Server password.</div>
+                        <div class="col-md-8 TableFormat5">For MySQL Server Authentication, this is your MySQL Server password.</div>
                         <div class="clearfix visible-xs"></div>
                     </div>
                     <div class="row row-eq-height">
@@ -159,9 +159,9 @@
 
                 </div>
                 <section>
-                    <h2 class="headerfont5"><u>SQL SERVER TYPES</u></h2>
+                    <h2 class="headerfont5"><u>MySQL SERVER TYPES</u></h2>
                     <p>
-                        The Server property is not limited to any particular SQL Server type and can accept different string formats, as shown below.
+                        The Server property is not limited to any particular MySQL Server type and can accept different string formats, as shown below.
                     </p>
                     <div class="Grid1">
                         <div class="row row-eq-height">
