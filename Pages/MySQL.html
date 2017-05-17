@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>My-SQL Integration</title>
+    <title>MySQL Integration</title>
 	<meta charset="utf-8" />
     <!-- Bootstrap -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -71,46 +71,10 @@
                     Assuming that you have your database server up and running, either locally or remotely, to get started working with this plugin, you first need to create a database and a table in your server, where you would like to store all your in-game data.
                 </p>
                 <p>
-                    If you are unsure regarding how to work with SQL Express, let me quickly walk you through the basic steps.
+                    If you are unsure regarding how to work with MySQL, you can visit the below link to get yourself started with MySQL
                 </p>
-                <ol>
-                    <li>
-                        Download and install SQL Server Express edition from the below link:<br />
-                        <p style="text-align:center"><a href="https://go.microsoft.com/fwlink/?LinkID=799012">https://go.microsoft.com/fwlink/?LinkID=799012</a></p>
-                    </li>
-                    <li>
-                        <p>Open your SQL Server client and connect to your database server by using Windows Authentication or SQL Server authentication</p>
-                        <img class="Image2" src="../Images/ServerLogin.png" />
-                        <p>
-                            By default, you will get a local DB server called locahost, which will be saved in your local machine. To create a dedicated server, please go through the steps given in the below link:
-                        </p>
-                        <p style="text-align:center"><a href="https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started">https://docs.microsoft.com/en-us/azure/sql-database/sql-database-get-started</a></p>
-                        <p>
-                            To understand how to create a login, please visit the below link:
-                        </p>
-                        <p style="text-align:center"><a href="https://msdn.microsoft.com/en-in/library/aa337562.aspx">https://msdn.microsoft.com/en-in/library/aa337562.aspx</a></p>
-
-                    </li>
-                    <li>
-                        <p>
-                            Once your database is created, it should be visible in object explorer, within Databases.
-                        </p>
-                        <p>
-                            Right click on your database name, and open New Query Window. Then create one or more tables, which you want to use for storing and retrieving your game data. Below is a simple query that lets you create a table called Products. (Source - <a href="https://msdn.microsoft.com/en-us/library/ms365315.aspx"> https://msdn.microsoft.com/en-us/library/ms365315.aspx</a>)
-                        </p>
-                        <p class="SQLQueryFont">
-                            CREATE TABLE dbo.Products<br />
-                            (<br />
-                            ProductID int PRIMARY KEY NOT NULL,<br />
-                            ProductName varchar(25) NOT NULL,<br />
-                            Price money NULL,<br />
-                            ProductDescription text NULL<br />
-                            )<br />
-                        </p>
-                    </li>
-                </ol>
-
-            </div>
+		<p style="text-align:center"><a href="https://dev.mysql.com/doc/mysql-getting-started/en/">https://dev.mysql.com/doc/mysql-getting-started/en/</a></p>
+          </div>
 
         </div>
         <div class="row">
