@@ -216,8 +216,11 @@
 
                 </div>
                 <section>
-                    <h2 class="headerfont5"><u>SQL SERVER TYPES</u></h2>
+                    <h2 class="headerfont5"><u>Forming the Connection String</u></h2>
                     <p>
+			A connection string typically looks like:
+			    Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;
+			    
                         The Server property is not limited to any particular SQL Server type and can accept different string formats, as shown below.
                     </p>
                     <div class="Grid1">
@@ -229,20 +232,28 @@
                                     <div class="col-xs-12 col-md-6 TableFormat7">String Format</div>
                                 </div>
                             </div>
-                            <div class="col-xs-12 col-md-6 TableFormat8">Examples</div>
+                           
                         </div>
                         <div class="row row-eq-height">
                             <div class="col-xs-6 col-md-3 TableFormat4">Standard Security , TCP/IP</div>
                             <div class="col-xs-12 col-md-3 TableFormat5">hostname <br />tcp:hostname  <br />tcp:hostname, portNumber</div>
-                            <div class="col-xs-12 col-md-6 TableFormat5">tcp:hostname , tcp:hostname, portNumber</div>
                         </div>
                         <div class="row row-eq-height">
                             <div class="col-xs-6 col-md-3 TableFormat4">Named Pipes</div>
                             <div class="col-xs-12 col-md-3 TableFormat5">np:hostname , np:\\hostname\pipe\pipeName</div>
-                            <div class="col-xs-12 col-md-6 TableFormat5">np:hostname , np:\\hostname\pipe\pipeName</div>
-                        </div>
+                      </div>
 
                     </div>
+			 <p>
+                            To learn about various types of Connection String and forming the one that best suits your requirement, you can refer to the below link:
+                        </p>
+                        <p style="text-align:center"><a href="https://www.connectionstrings.com/sql-server/">https://www.connectionstrings.com/sql-server/</a></p>
+                         <p>
+			    So if your connectionstring consists of extra parameters , apart from the usual parameters inclusded in the Set Connection Properties function(Server , DBName , UserID , Password , IsTrusted) , you can enter those extra parameters in the Server input, seperated by a semicolon.	 
+		            For example , if your connectionstring is something like : 
+				 Server=.\SQLExpress;AttachDbFilename=C:\MyFolder\MyDataFile.mdf;Database=dbname;Trusted_Connection=Yes;
+		            Then you need to enter , in your Server input , .\SQLExpress;AttachDbFilename=C:\MyFolder\MyDataFile.mdf
+                         </p>
                 </section>
             </div>
         </div>
