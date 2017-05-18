@@ -218,9 +218,11 @@
                 <section>
                     <h2 class="headerfont5"><u>Forming the Connection String</u></h2>
                     <p>
-			A connection string typically looks like:
-			    Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;
-			    
+                        A connection string typically looks like:
+                    <p>
+                           <strong>Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;</strong> 
+                    </p>
+                    <p>
                         The Server property is not limited to any particular SQL Server type and can accept different string formats, as shown below.
                     </p>
                     <div class="Grid1">
@@ -244,18 +246,14 @@
                       </div>
 
                     </div>
-			 <p>
+			             <p>
                             To learn about various types of Connection String and forming the one that best suits your requirement, you can refer to the below link:
                         </p>
                         <p style="text-align:center"><a href="https://www.connectionstrings.com/sql-server/">https://www.connectionstrings.com/sql-server/</a></p>
-                         <p>
-			    So if your connectionstring consists of extra parameters , apart from the usual parameters included in the <strong>Set Connection Properties</strong> function(Server , DBName , UserID , Password , IsTrusted) , you can enter those extra parameters in the Server input, seperated by a semicolon.	 
-		            For example , if your connectionstring is something like : 
-			  </p>
-			  <p style="text-align:center">
-				 <strong>Server=.\SQLExpress;AttachDbFilename=C:\MyFolder\MyDataFile.mdf;Database=dbname;Trusted_Connection=Yes;</strong>
-			  </p>
-			 <p>
+                         <p> So if your connectionstring consists of extra parameters , apart from the usual parameters included in the <strong>Set Connection Properties</strong> function(Server , DBName , UserID , Password , IsTrusted) , you can enter those extra parameters in the Server input, seperated by a semicolon. For example , if your connectionstring is something like : 
+			          <br />
+				 <p style="text-align:center"><strong>Server=.\SQLExpress;AttachDbFilename=C:\MyFolder\MyDataFile.mdf;Database=dbname;Trusted_Connection=Yes;</strong>
+			 </p>
 				 Then you need to enter , in your Server input , <strong>.\SQLExpress;AttachDbFilename=C:\MyFolder\MyDataFile.mdf</strong>
                          </p>
                 </section>
@@ -362,7 +360,7 @@
                     <p>
                         To save an image to our table, we first need to browse for an image from our desktop. As of now, you cannot directly save UE4 Textures to your database. Instead, you can directly browse for an image of common types via Blueprints, by calling the function called <strong>Browse File</strong>.
                     </p>
-                    <img class="Image2" src="../Images/BrowseFile.png" />
+                    <img class="Image4" src="../Images/BrowseFile.png" />
                     <p>
                         <br />
                         This function will bring up a File Browser dialogue. On selecting the image file and clicking OK, the dialogue box will close and the function returns the file path. You may have your separate ways of retrieving image path from your hard drive, so this function is pretty much optional.
