@@ -158,34 +158,24 @@
                     </div>
 
                 </div>
-                <section>
-                    <h2 class="headerfont5"><u>MySQL SERVER TYPES</u></h2>
+                              <section>
+                    <h2 class="headerfont5"><u>Forming the Connection String</u></h2>
                     <p>
-                        The Server property is not limited to any particular MySQL Server type and can accept different string formats, as shown below.
+                        A connection string typically looks like:
+                    <p>
+                           <strong>Server=myServerAddress;Database=myDataBase;User Id=myUsername;Password=myPassword;</strong> 
                     </p>
-                    <div class="Grid1">
-                        <div class="row row-eq-height">
-                            <div class="col-xs-6 col-md-6 TableFormat8">
-                                Server Details
-                                <div class="row row-eq-height">
-                                    <div class="col-xs-12 col-md-6 TableFormat6">Server Type</div>
-                                    <div class="col-xs-12 col-md-6 TableFormat7">String Format</div>
-                                </div>
-                            </div>
-                            <div class="col-xs-12 col-md-6 TableFormat8">Examples</div>
-                        </div>
-                        <div class="row row-eq-height">
-                            <div class="col-xs-6 col-md-3 TableFormat4">Standard Security , TCP/IP</div>
-                            <div class="col-xs-12 col-md-3 TableFormat5">hostname <br />tcp:hostname  <br />tcp:hostname, portNumber</div>
-                            <div class="col-xs-12 col-md-6 TableFormat5">tcp:hostname , tcp:hostname, portNumber</div>
-                        </div>
-                        <div class="row row-eq-height">
-                            <div class="col-xs-6 col-md-3 TableFormat4"></div>
-                            <div class="col-xs-12 col-md-3 TableFormat5">np:hostname , np:\\hostname\pipe\pipeName</div>
-                            <div class="col-xs-12 col-md-6 TableFormat5">np:hostname , np:\\hostname\pipe\pipeName</div>
-                        </div>
-
-                    </div>
+                     <p>
+                            To learn about various types of Connection String and forming the one that best suits your requirement, you can refer to the below link:
+                        </p>
+                        <p style="text-align:center"><a href="https://www.connectionstrings.com/mysql/">https://www.connectionstrings.com/mysql</a></p>
+                         <p> So if your connectionstring consists of extra parameters , apart from the usual parameters included in the <strong>Set Connection Properties</strong> function(Server , DBName , UserID , Password , IsTrusted) , you can enter those extra parameters in the Server input, seperated by a semicolon. For example , if your connectionstring is something like : 
+			          <br />
+				 <p style="text-align:center"><strong>Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;Protocol=pipe;PipeName=mypipename;</strong>
+			 </p>
+			<p>
+				 Then you need to enter , in your Server input , <strong>myServerAddress;Protocol=pipe;PipeName=mypipename</strong>
+                         </p>
                 </section>
             </div>
         </div>
